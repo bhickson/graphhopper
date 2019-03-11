@@ -514,6 +514,8 @@ public class CarFlagEncoderTest {
         // Test if cattle_grid is not blocking
         node = new ReaderNode(1, -1, -1);
         node.setTag("barrier", "cattle_grid");
+	node.setTag("access", "yes");
+	node.setTag("motorcar", "yes");
         assertTrue(encoder.handleNodeTags(node) == 0);
     }
 

@@ -72,7 +72,8 @@ public abstract class AbstractFlagEncoder implements FlagEncoder {
     private long relBitMask;
     private EncodedValueOld turnCostEncoder;
     private long turnRestrictionBit;
-    private boolean blockByDefault = true;
+    //private boolean blockByDefault = true;
+    private boolean blockByDefault = false;
     private boolean blockFords = true;
     private boolean registered;
     protected EncodedValueLookup encodedValueLookup;
